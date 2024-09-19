@@ -1,0 +1,23 @@
+body {
+    font-family: Stencil Std, fantasy;
+    margin: 20px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #f20c7b;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #F08080;
+}
+
+button {
+    margin-top: 10px;
+}

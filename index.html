@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Receitas e Despesas</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.16.9/xlsx.full.min.js"></script>
+
+</head>
+<body>
+    <h1>Controle de Receitas e Despesas</h1>
+    <form id="form">
+        <input type="text" id="descricao" placeholder="Descrição" required>
+        <input type="number" id="valor" placeholder="Valor" required>
+        <select id="tipo" required>
+            <option value="">Selecione</option>
+            <option value="receita">Receita</option>
+            <option value="despesa">Despesa</option>
+        </select>
+        <button type="submit">Adicionar</button>
+    </form>
+    
+    <table id="tabela">
+        <thead>
+            <tr>
+                <th>Descrição</th>
+                <th>Valor</th>
+                <th>Tipo</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody id="tbody"></tbody>
+    </table>
+    
+    <h2>Total Despesas: <span id="totalDespesas">0</span></h2>
+    <button id="exportar">Exportar para Excel</button>
+    
+    <script src="script.js"></script>
+</body>
+</html>
